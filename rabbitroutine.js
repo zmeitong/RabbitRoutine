@@ -12,6 +12,19 @@ function displayHome(){
     
 }
 
+function share_Schedule(){
+    var x = document.getElementById("schedule");
+   document.getElementById("rabbit").src= 'https://i.imgur.com/iPrbaod.png';
+  
+    if (x.style.zIndex == 0) {
+          for (var i = 0; i < interfaceDisplays.length; i++){
+            interfaceDisplays[i].style.zIndex=0;};
+         x.style.zIndex = 1;
+    }
+    
+}
+
+
 function create_Course(){
     var x = document.getElementById("newCoursePage");
      document.getElementById("rabbit").src= 'https://i.imgur.com/iPrbaod.png';
