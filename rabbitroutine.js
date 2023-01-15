@@ -1,20 +1,42 @@
-function createCourse(){
+var interfaceDisplays = document.getElementsByClassName("speechbox")
 
-    var x = document.getElementById("courseForm");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
+function displayHome(){
+    var x = document.getElementById("homepage");
+    if (x.style.zIndex == 0) {
+          for (var i = 0; i < interfaceDisplays.length; i++){
+            interfaceDisplays[i].style.zIndex=0;};
+         x.style.zIndex = 1;
     }
-    
+    console.log("homepage", x.style.zIndex)
+ 
+}
+
+function create_Course(){
+    var x = document.getElementById("newCoursePage");
+    if (x.style.zIndex == 0) {
+      for (var i = 0; i < interfaceDisplays.length; i++){
+        interfaceDisplays[i].style.zIndex=0;};
+     x.style.zIndex = 1;
+    }
+    console.log("create course page", x.style.zIndex)
+}
+
+function displayCourse(){
+    var x = document.getElementById("courseresults");
+    if (x.style.zIndex == 0) {
+      for (var i = 0; i < interfaceDisplays.length; i++){
+        interfaceDisplays[i].style.zIndex=0;};
+     x.style.zIndex = 1;
+    }
+    console.log("course results page", x.style.zIndex)
 }
 
 function create_Event(){
-    var x = document.getElementById("eventForm");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
+    var x = document.getElementById("newEventPage");
+    if (x.style.zIndex == 0) {
+          for (var i = 0; i < interfaceDisplays.length; i++){
+            interfaceDisplays[i].style.zIndex=0;};
+         x.style.zIndex = 1;
     }
+  console.log("new event page", x.style.zIndex)
 }
-
