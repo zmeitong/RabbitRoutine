@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
+
   <title>Rabbit Routine</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="rabbitroutine.js"></script>
 </head>
+
 <body>
+
+
 <div class="flex-body">
   
   <div class="flex-child-element timetable">
     
-    <!--TimeTable-->
+    <! Timetable >
     <table class="table table-striped-columns">
       <thead>
         <tr>
@@ -127,52 +130,80 @@
         </tr>
       </tbody>
 </table> 
-
     
-    <!--Buttons-->
-    <button class="button courseButton" type="button" onClick="createCourse()">+New Course</button>
+    <! Course Block Sample >
+    
+    <button class="timeblock" onclick="displayCourse()">
+      2J04 LEC</button>
+   
+    <! Buttons >
+    <button class="button courseButton" type="button" onClick="create_Course()">+New Course</button>
     <button class="button eventButton" type="button" onClick="create_Event()">+New Event</button>
     <button class="button shareButton" type="button" >Share Schedule</button>
+    <button class="button homeButton" onclick="displayHome()">Home</button>
     <br>
     <br>
     <br>
-    <!--Progress Bar -->
+    <div>
 
-<div>
-  <form action="" id="courseForm">
+
+
+</div>
+    <! Progress Bar >
+<div class="progress">
+<label for="tasks">25%</label>
+<progress value="25" max="100"> 25% </progress>
+    
+    </div>
+  </div>
+  
+  <div class="flex-child-element speech">
+  <div class="container">
+  <! Interface >
+    <div class="speechbox homepage" id = "homepage">
+    <h1>Welcome to your schedule!</h1>
+Tap New Course or New Event to get started.<br><br>Tap Share to compare schedules with someone else.
+    </div> 
+    
+    <div class="speechbox newCoursePage" id = "newCoursePage">
+    <h1>Add New Course</h1>
+  <form action="" id="course_Form">
     <p><input type="text" placeholder="Class Name" id = "className"/></p>
     <p><input type="text" placeholder="Start Time" id ="class_starttime" /></p>
     <p><input type= "text" placeholder="End Time" id ="class_endtime"/></p>
     <p><input type="submit" value="Schedule" id ="class_schedule" /></p>
   </form>
-
-  <form action="" id="eventForm">
+    </div>
+    
+    <div class="speechbox newEventPage" id = "newEventPage">
+    <h1>Add New Event</h1>
+      
+     <form action="" id="event_Form">
     <p><input type="text" placeholder="Event Name" id= "event_Name"/></p>
     <p><input type="text" placeholder="Start Time" id="event_Starttime" /></p>
     <p><input type= "text" placeholder="End Time" id = "event_endTime"/></p>
     <p><input type="submit" value="Reserve" id ="event_reserve" /></p>
   </form>
-</div>
-
-<div class="progress">
-<label for="tasks">25%</label>
-<progress id="tasks" value="25" max="100"> 25% </progress>
-
-</div>
-  </div>
-  
-  <div class="flex-child-element interface">
-  
-  <!--Interface-->
-  <div class="speechbox">
-    <!--text-->
-  </div>
-  
-  <div class="rabbit">
-    <img alt="Icon of Bunny" src="https://cdn.discordapp.com/attachments/1063859494477639680/1063949202834591854/temporary_rabbit.png">
     </div>
-</div>
+    
+    <div class="speechbox courseresults" id = "courseresults">
+    <h1>CIVENG 2J04</h1>
+    <h2>MDGC 1307</h2>Lecture
+<br>9:30 am - 1:30 am
 
+    <h2>Tasks</h2>
+<form>
+  <input type="checkbox" id="task1">
+  <label for="task1">pre lecture notes</label><br>
+  <input type="checkbox" id="task2">
+  <label for="task2"> hmwk assignment #1</label></form>
+    </div>
+    </div>
+  
+</div>
+  <div class="rabbit">
+    <img src="https://cdn.discordapp.com/attachments/1063859494477639680/1063949202834591854/temporary_rabbit.png">
+  </div>
 </body>
 </html>
   
