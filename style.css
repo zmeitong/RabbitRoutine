@@ -1,3 +1,25 @@
+:root {
+  --lightorange: #fff5eb;
+  --orange: #ffd9ae;
+  --darkorange: #DF9160;
+  --white: #FFF4E5;
+  --lightblue: #C2E3DF;
+  --blue: #6FAEB1;
+  --darkblue: #498390;
+  
+  --consolasfont: Consolas, monaco, monospace;
+  
+  --doll: "https://cdn.discordapp.com/attachments/736720737917861911/1064246946723807333/pagedoll_2.png";
+  
+  --mondayColumn: 100px;
+  --timeStart: 100px;
+  --courseDuration: 200px;
+}
+
+body {
+  background-color: #FFF4E5;
+}
+
 .flex-body {
   display: flex;
   width: 100%;
@@ -8,16 +30,16 @@
   margin: 10px;
 }
 
-.flex-child-element:first-child {
+.flex-child-element interface {
   margin-right: 20px;
 }
 
 tr:nth-child(even) {
-  background-color: #ffd9ae;
+  background-color: var(--orange);
 }
 
 tr:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: var(--lightorange);
 }
 
 table, td {
@@ -26,9 +48,9 @@ table, td {
   height: 30px;
   border: 1px solid;
   border-collapse: collapse;
-  border-color: #e6ad8a;
-  color: #DF9160;
-  font-family: "Lucida Console", "Courier New", monospace;
+  border-color: var(--darkorange);
+  color: var(--darkblue);
+  font-family: var(--consolasfont);
   font-size: 15px;
 }
 
@@ -38,32 +60,43 @@ th[scope=col]{
   height: 30px;
   border: 3px solid;
   border-collapse: collapse;
-  border-color: #fff;
-  background-color: #6FAEB1;
-  color: #fff;
-  font-family: Consolas, monaco, monospace;
+  border-color: var(--white);
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: var(--consolasfont);
   font-size: 15px;
 }
 
 th[scope=row] {
-  background-color: #fff;
+  background-color: var(--white);
   width: 600px;
   border: 3px solid;
   border-collapse: collapse;
-  border-color: #fff;
-  color: #6FAEB1;
-  font-family: Consolas, monaco, monospace;
+  border-color: var(--white);
+  color: var(--blue);
+  font-family: var(--consolasfont);
   font-size: 13px;
 }
 
-.speechbox {
-  border-radius: 25px;
-  background: #498390;
-  padding: 20px;
-  width: 80%;
+.container {
+  margin: 0px;
+  width: 60%;
   height: 300px;
-  color: #fff;
-  font-family: Consolas, monaco, monospace;
+  position: relative;
+}
+
+.speechbox {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  border-radius: 25px;
+  background: var(--darkblue);
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  color: var(--white);
+  font-family: var(--consolasfont);
 }
 
 .button {
@@ -73,17 +106,19 @@ th[scope=row] {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: Consolas, monaco, monospace;
-  color: #fff;
+  font-family: var(--consolasfont);
+  color: var(--white);
   font-size: 15px;
   margin: 4px 2px;
   cursor: pointer;
   float: right;
 }
 
-.courseButton {background-color: #DF9160;}
-.eventButton {background-color: #008CBA;}
-.shareButton {background-color: #C2E3DF;}
+.courseButton {background-color: var(--darkorange);}
+.eventButton {background-color: var(--darkblue);}
+.shareButton {background-color: var(--lightblue);}
+.homeButton {background-color: white;
+color: var(--darkblue)}
 
 img {
   max-width:100%;
@@ -93,8 +128,9 @@ img {
 .rabbit {
     position: absolute;
     right: 150px;
-    margin: -50px;
+    top: 300px;
     width: 300px;
+    z-index: 10;
 }
 
 .progress {
@@ -102,7 +138,7 @@ img {
   float: right;
   font-size: 25px;
   border-radius: 2px;
-  font-family: Consolas, monaco, monospace;
+  font-family: var(--consolasfont);
 }
 
 progress {
@@ -111,10 +147,31 @@ progress {
   width: 500px;
 }
 progress::-webkit-progress-bar {
-  background-color: #C2E3DF;
+  background-color: var(--lightblue);
   border-radius: 7px;
 }
 progress::-webkit-progress-value {
-  background-color: #498390;
+  background-color: var(--darkblue);
   border-radius: 7px;
+}
+
+.timeblock {
+  position: absolute;
+  left: var(--mondayColumn);
+  top: var(--timeStart);
+  width: 92px;
+  height: var(--courseDuration);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: var(--consolasfont);
+  color: #fff;
+  font-size: 15px;
+  margin: 4px 2px;
+  background-color: var(--darkblue);
+  cursor: pointer;
+}
+
+.homepage {
+  z-index: 0;
 }
