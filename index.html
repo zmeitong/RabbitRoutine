@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rabbit Routine</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="rabbitroutine.js"></script>
+</head>
+<body>
+<div class="flex-body">
+  
+  <div class="flex-child-element timetable">
+    
+    <!--TimeTable-->
+    <table class="table table-striped-columns">
+      <thead>
+        <tr>
+          <th scope="row"> </th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesday</th>
+          <th scope="col">Wednesday</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">8:00 am</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th scope="row">9:00 am</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">10:00 am</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">11:00 am</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">12:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>  <tr>
+          <th scope="row">1:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">2:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">3:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">4:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">5:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">6:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>    <tr>
+          <th scope="row">7:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+            <tr>
+          <th scope="row">8:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+            <tr>
+          <th scope="row">9:00 pm</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>
+</table> 
+
+    
+    <!--Buttons-->
+    <button class="button courseButton" type="button" onClick="createCourse()">+New Course</button>
+    <button class="button eventButton" type="button" onClick="create_Event()">+New Event</button>
+    <button class="button shareButton" type="button" >Share Schedule</button>
+    <br>
+    <br>
+    <br>
+    <!--Progress Bar -->
+
+<div>
+  <form action="" id="courseForm">
+    <p><input type="text" placeholder="Class Name" id = "className"/></p>
+    <p><input type="text" placeholder="Start Time" id ="class_starttime" /></p>
+    <p><input type= "text" placeholder="End Time" id ="class_endtime"/></p>
+    <p><input type="submit" value="Schedule" id ="class_schedule" /></p>
+  </form>
+
+  <form action="" id="eventForm">
+    <p><input type="text" placeholder="Event Name" id= "event_Name"/></p>
+    <p><input type="text" placeholder="Start Time" id="event_Starttime" /></p>
+    <p><input type= "text" placeholder="End Time" id = "event_endTime"/></p>
+    <p><input type="submit" value="Reserve" id ="event_reserve" /></p>
+  </form>
+</div>
+
+<div class="progress">
+<label for="tasks">25%</label>
+<progress id="tasks" value="25" max="100"> 25% </progress>
+
+</div>
+  </div>
+  
+  <div class="flex-child-element interface">
+  
+  <!--Interface-->
+  <div class="speechbox">
+    <!--text-->
+  </div>
+  
+  <div class="rabbit">
+    <img alt="Icon of Bunny" src="https://cdn.discordapp.com/attachments/1063859494477639680/1063949202834591854/temporary_rabbit.png">
+    </div>
+</div>
+
+</body>
+</html>
+  

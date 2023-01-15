@@ -1,0 +1,120 @@
+.flex-body {
+  display: flex;
+  width: 100%;
+}
+
+.flex-child-element {
+  flex: 1;
+  margin: 10px;
+}
+
+.flex-child-element:first-child {
+  margin-right: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffd9ae;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+table, td {
+  table-layout: auto;
+  width: 600px;
+  height: 30px;
+  border: 1px solid;
+  border-collapse: collapse;
+  border-color: #e6ad8a;
+  color: #DF9160;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 15px;
+}
+
+th[scope=col]{
+  table-layout: auto;
+  width: 600px;
+  height: 30px;
+  border: 3px solid;
+  border-collapse: collapse;
+  border-color: #fff;
+  background-color: #6FAEB1;
+  color: #fff;
+  font-family: Consolas, monaco, monospace;
+  font-size: 15px;
+}
+
+th[scope=row] {
+  background-color: #fff;
+  width: 600px;
+  border: 3px solid;
+  border-collapse: collapse;
+  border-color: #fff;
+  color: #6FAEB1;
+  font-family: Consolas, monaco, monospace;
+  font-size: 13px;
+}
+
+.speechbox {
+  border-radius: 25px;
+  background: #498390;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  color: #fff;
+  font-family: Consolas, monaco, monospace;
+}
+
+.button {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas, monaco, monospace;
+  color: #fff;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}
+
+.courseButton {background-color: #DF9160;}
+.eventButton {background-color: #008CBA;}
+.shareButton {background-color: #C2E3DF;}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.rabbit {
+    position: absolute;
+    right: 150px;
+    margin: -50px;
+    width: 300px;
+}
+
+.progress {
+  margin: 10px;
+  float: right;
+  font-size: 25px;
+  border-radius: 2px;
+  font-family: Consolas, monaco, monospace;
+}
+
+progress {
+  border-radius: 7px; 
+  height: 22px;
+  width: 500px;
+}
+progress::-webkit-progress-bar {
+  background-color: #C2E3DF;
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: #498390;
+  border-radius: 7px;
+}
