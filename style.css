@@ -97,6 +97,10 @@ th[scope=row] {
   font-family: var(--consolasfont);
 }
 
+.homepage {
+  z-index: 1;
+}
+
 .button {
   border: none;
   border-radius: 15px;
