@@ -1,0 +1,88 @@
+HTML
+
+<div class="background">
+    <img src="https://media.discordapp.net/attachments/1063859494477639680/1063979688130785330/sitting.png?width=486&height=670" class="foreground-image">
+</div>
+
+<div class="background-image" style="background-image:url(https://media.discordapp.net/attachments/310227169643331586/1064021103896428604/33575.jpg?width=1440&height=635);"></div>
+
+<div class="background">
+    <div class="blue-box"></div>
+    <p class="rabbit-routine-text">Rabbit Routine</p>
+    <p class="rabbit-routine-text2">Achieve your goals, one hop at a time</p>
+</div>
+
+<form class="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Submit">
+</form>
+
+--------------------------------------------------------------------------------------------------------
+CSS
+
+.background-image {
+    width: 1400;
+    height: 768px;
+    background-size: cover;
+    background-position: center;
+}
+
+.rabbit-routine-text {
+    font-family: Consolas;
+    font-weight: bold;
+    font-size: 80px;
+    position: absolute;
+    top: 27px;
+    left: 62%;
+    z-index: 1; /* This will make the text appear above the background */
+}
+
+.rabbit-routine-text2 {
+    font-family: Consolas;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+    top: 170px;
+    left: 57%;
+    z-index: 1; /* This will make the text appear above the background */
+}
+
+
+.blue-box {
+    width: 50%;
+    height: 786px;
+    background-color: #498390;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+.foreground-image {
+    position: absolute;
+    top: 100px;
+    left: 300px; /* Positive value will shift the element to the right */
+    z-index: 1;
+}
+
+.login-form {
+    font-family: Consolas;
+    font-size: 20px;
+    position: absolute;
+    top: 300px;
+    left: 35% + 300px; /* Shifting the element to the right by 300 pixels */
+}
+
+.login-form {
+    font-family: Consolas;
+    font-size: 20px;
+    position: absolute;
+    top: 300px;
+    left: 35%;
+    transform: translateX(530px);
+}
