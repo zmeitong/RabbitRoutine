@@ -2,22 +2,20 @@
   --lightorange: #fff5eb;
   --orange: #ffd9ae;
   --darkorange: #DF9160;
-  --white: #FFF4E5;
+  --white: #fff;
   --lightblue: #C2E3DF;
   --blue: #6FAEB1;
   --darkblue: #498390;
   
   --consolasfont: Consolas, monaco, monospace;
-  
-  --doll: "https://cdn.discordapp.com/attachments/736720737917861911/1064246946723807333/pagedoll_2.png";
-  
+
   --mondayColumn: 100px;
   --timeStart: 100px;
   --courseDuration: 200px;
 }
 
 body {
-  background-color: #FFF4E5;
+  background-color: #fff;
 }
 
 .flex-body {
@@ -120,15 +118,11 @@ th[scope=row] {
 .homeButton {background-color: white;
 color: var(--darkblue)}
 
-img {
-  max-width:100%;
-  max-height:100%;
-}
-
 .rabbit {
+    display: block;
     position: absolute;
-    right: 150px;
-    top: 300px;
+    right: 200px;
+    top: 250px;
     width: 300px;
     z-index: 10;
 }
@@ -170,8 +164,4 @@ progress::-webkit-progress-value {
   margin: 4px 2px;
   background-color: var(--darkblue);
   cursor: pointer;
-}
-
-.homepage {
-  z-index: 0;
 }
